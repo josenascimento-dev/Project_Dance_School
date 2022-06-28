@@ -39,6 +39,31 @@ var swiper = new Swiper(".review-slider", {
         },
         600:{
             slidesPerview:2,
-        }
+        },
+    },
+});
+var swiper = new Swiper(".blogs-slider", {
+    spaceBetween: 20,
+    effect: "fade",
+    grabCursor: true,
+    loop:true,
+    autoplay: {
+        delay: 7500,
+        disableOnIntereaction: false,
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    breakpoints:{
+        0:{
+            slidesPerView:1,
+        },
+        768:{
+            slidesPerview:2,
+        },
+        991:{
+            slidesPerview:3,
+        },
     }
 });

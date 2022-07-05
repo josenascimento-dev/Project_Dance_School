@@ -59,10 +59,10 @@ var swiper = new Swiper(".blogs-slider", {
             slidesPerView:1,
         },
         768:{
-            slidesPerView:2,
+            slidesPerView:1,
         },
         991:{
-            slidesPerView:3,
+            slidesPerView:1,
         },
     },
 });

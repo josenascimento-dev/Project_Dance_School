@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap");
+/*@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap");*/
 
 * {
     font-family: 'Nunito', sans-serif;
@@ -450,8 +450,21 @@ body {
     font-size: 2.5rem;
     margin: 1rem 0;
     color: #fff;
+    display: inline-block;
+    padding: 1rem;
   }
+  .pricing .plan .dance{
+   
+    font-weight: bolder;
+    color: rgb(122, 230, 210);
+    font-size: 2rem;
+    font-family: 'Permanent Marker', cursive;
   
+  }
+  .pricing .plan .dance span{
+    color: white;
+    font-family: 'Permanent Marker', cursive;
+  }
   .pricing .plan .price {
     font-size: 5rem;
     font-weight: bolder;
@@ -617,6 +630,10 @@ body {
   .review .review-slider .slide .user h3 {
     font-size: 2rem;
     color: #fff;
+  }
+  .review .review-slider .slide .user span{
+    font-size: 1.5rem;
+    color: rgb(106, 230, 203);
   }
   
   .review .review-slider .slide .user i {

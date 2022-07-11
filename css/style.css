@@ -186,7 +186,7 @@ body {
 
   
   .home .slide .content h3 {
-    font-size: 4rem;
+    font-size: 3rem;
     color: #fff;
     padding: 1rem 0;
     display: block;
@@ -213,7 +213,7 @@ body {
 }
 
 .about h1{
-  margin-top: 3rem;
+  margin-top: 2rem;
 } 
   .about .image {
 
@@ -228,7 +228,7 @@ body {
   .about .box-container{
     display: flex;
     flex-direction: row;
-    margin-top: 7rem;
+    margin-top: 0rem;
   }
   
   .about .image::before {
@@ -442,22 +442,21 @@ body {
 
   
   .pricing {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (minmax(32rem, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
-    gap: 1.5rem;
+   display: flex;
+   flex-direction: column;
   }
-  
+ 
   .pricing .plan {
+    display: block;
+    float: left;
+    width: 30%;
     text-align: center;
+    align-self: center;
     padding: 2rem;
-    border-radius: 1rem ;
-  }
-
-  .pricing .plan:hover {
-    border: 0.2rem solid rgb(106, 230, 203); 
+    margin-left: 3rem;
+    margin-top: 2rem;
     border-radius: 1rem;
+    
   }
 
   .pricing .plan.basic {
@@ -666,8 +665,8 @@ body {
   .footer .box-container {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    -ms-grid-columns: (minmax(28rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
     gap: 1.5regallery
   }
   .footer .box-container .box h3 {
@@ -718,25 +717,18 @@ body {
     background: rgb(106, 230, 203);
   }
   
-
-  .footer .box-container .box{
-    align-self: center;
- 
-  }
-
   .footer .box-container .box form .email {
-    
     margin-bottom: 1rem;
     margin-right: 1rem;
     border-radius: 10rem;
-    width: 50%;
+    width: 100%;
     background: #111;
     padding: 1.2rem;
     font-size: 1.5rem;
     color: #fff;
     text-transform: none;
   }
-  
+ 
   .credit {
     font-size: 2rem;
     text-align: center;
@@ -749,6 +741,11 @@ body {
   .credit span {
     color: rgb(106, 230, 203);
   }
+
+
+
+
+
   
   @media (max-width: 991px) {
     html {
@@ -770,7 +767,30 @@ body {
     .home .slide .content h3 {
       font-size: 4rem;
     }
+    .home .slide .content span {
+      font-size: 2.7rem;
+    }
+    .home .slide .content h3 {
+      font-size: 2.2rem;}
   }
+
+  .about{
+    flex-direction: column;
+    
+  }
+  .about .box-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .about .box-container .image{
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
   
   @media (max-width: 768px) {
     #menu-btn {
@@ -800,10 +820,25 @@ body {
       display: block;
       font-size: 2rem;
     }
-    .about {
-      gap: 3rem;
+    .home .slide .content span {
+      font-size: 2.5rem;
+      color: white;
+      font-weight: bold;
+      font-family: 'Permanent Marker', cursive;
+      text-decoration:#000;
     }
+    .home .slide .content h3 {
+      font-size: 2rem;
+      color: #fff;
+      padding: 1rem 0;
+      text-align: center;
+      font-weight: bold;
+    }
+    
+    
     .about .image {
+      display: flex;
+      flex-direction: column;
       margin-top: 5rem;
    
     }
@@ -820,6 +855,14 @@ body {
       -webkit-box-direction: normal;
           -ms-flex-flow: column;
               flex-flow: column;
+    }
+    .pricing .table{
+      display: flex;
+      flex-direction: column;
+     
+    }
+    .pricing .table .plan{
+      width: 100%;
     }
     .gallery .slide .image {
       height: 35rem;
